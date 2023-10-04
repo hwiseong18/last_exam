@@ -7,14 +7,6 @@ export default async function Detail({params}) {
   return (
     <>
       <center><div className='problem'>
-        <div>{result.content}</div>
-        <div>{result.img}</div>
-      </div>
-      <div className="bogi">
-        <div>1. {result.first}</div>
-        <div>2. {result.second}</div>
-        <div>3. {result.third}</div>
-        <div>4. {result.fourth}</div>
       </div></center>
     </>
   )
