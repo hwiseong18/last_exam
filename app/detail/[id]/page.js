@@ -6,10 +6,11 @@ export default async function Detail({params}) {
   const result = await db.collection('problem').findOne({'_id':new ObjectId(params.id)})
   return (
     <>
-      <h2 style={{padding:"15px", margin:"15px"}}>여기가 상세</h2>
-      <center><div className='detail'>
+      <center><div className='problem'>
         <div>{result.content}</div>
         <div>{result.img}</div>
+      </div>
+      <div className="bogi">
         <div>1. {result.first}</div>
         <div>2. {result.second}</div>
         <div>3. {result.third}</div>
