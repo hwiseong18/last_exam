@@ -3,13 +3,13 @@ import { signIn, signOut } from "next-auth/react"
 
 function LoginCom(){
   return(
-    <button onClick={()=>{signIn()}}>로그인</button>
+    <p onClick={()=>{signIn()}}>로그인</p>
   )
 }
 
 function LogoutCom(){
   return(
-    <button onClick={()=>{signOut()}}>로그아웃</button>
+    <p onClick={()=>{signOut()}}>로그아웃</p>
   )
 }
 

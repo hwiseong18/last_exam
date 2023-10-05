@@ -1,5 +1,5 @@
 export default function Msg({params}){
   return (
-    <h2>{params.msg}</h2>
+    <center><h2>{params.msg}</h2></center>
   )
 }
