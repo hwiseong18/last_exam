@@ -8,6 +8,7 @@ export default async function handler(req, res){
     req.body.author = session.user;
     const db = await client.db('exam');
     const result = await db.collection('problem').insertOne(req.body);
+    console.log(result)
     res.redirect(302, "/list");
   }
   else return res.redirect(302, "/new");
